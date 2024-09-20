@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+
+.titulos {
+    color: rgb(33, 30, 30);
+    background-color: rgb(132, 19, 42);
+    text-align: center;
+    width: 700px;
+    border-radius: 19%;
+
+}
+
+.navegacion ul li {
+    margin: 3px 20px 15px 2px;
+    padding: 5px;
+    background-color: crimson;
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+
+}
+
+.hipervinculo h4 {
+    color: coral;
+    background-color: rebeccapurple;
+    size: 19px;
+}
+
+
+.contenido ul h4 {
+    margin: 20px;
+    padding: 50px;
+    border-radius: 50%;
+    color: aquamarine;
+    size: 10px;
+    background-color: grey;
+    text-align: center;
+    width: 34%;
+}
+
+.contenido ul p {
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    size: 10px;
+    text-align: justify;
+    width: 800px;
+}
+
+#logo {
+    background-image: linear-gradient(to bottom, rgb(5, 20, 62), rgb(50, 60, 62));
+    /* Gradiente de rojo a negro */
+    width: 800px;
+    /* Ancho de la imagen */
+    margin: 250px auto;
+    /* Centrado con margen superior e inferior */
+    border-radius: 38%;
+    /* Bordes redondeados */
+    opacity: 0.8;
+    /* Opacidad al 80% */
+}
+
+body {
+    background-color: rgb(5, 20, 62);
+    color: white;
+    width: 500px;
+}
+
+.fotos {
+    width: 500px;
+    margin: 25px;
+}
+
+.cuadros {
+    margin: 100 px;
+    width: 200px;
+}
