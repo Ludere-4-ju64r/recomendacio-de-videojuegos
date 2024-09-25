@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>selecetor de videojuegos</title>
+  <META name="author" content="Lucas Gaitan">
+  <META name="descrition" content="pagina selectora de videojuegos">
+  <META name="keywords" content="videojuegos, que jugar, estoy aburrido">
+  <link href="estilos.css" . rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="imagenes/unnamed.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="javascript.js"></script>
+</head>
+
+<body>
+
+  <header class="titulos">
+    <h1><strong><u>LUDERE, selector de videojuegos</u></strong></h1>
+  </header>
+  <nav class="navegacion">
+    <ul>
+      <li><a href="home.html">
+          home
+        </a></li>
+      <li><a href="encuesta.html">
+          encuesta
+        </a></li>
+      <li><a href="listado.html">
+          listado
+        </a></li>
+      <li><a href="noticias del mundo gamer.html">
+          noticias del mundo gamer
+        </a></li>
+
+    </ul>
+    <img src="imagenes/unnamed.png" id="logo" alt="logo">
+
+
+    <ol>
+      <li>
+        <p>¿Te gusta jugar?</p>
+        <select id="option1" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="Sí">Sí</option>
+          <option value="No">No</option>
+        </select>
+        <!-- Mensaje que se mostrará si elige "No" -->
+        <p id="mensaje" class="mensaje">Entonces, ¿para qué viene?</p>
+      </li>
+      </select></li>
+      <li>
+        <p>¿te gustan los juegos de disparos?</p>
+        <select class="nondisplay" id="option2" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+
+          <option value="option 2 A">si</option>
+          <option value="option 2 B">no</option>
+
+        </select>
+      </li>
+      <li>
+        <p>¿Pregunta 3?</p>
+        <select class="nondisplay" id="option3" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="option 3 A">si</option>
+          <option value="option 3 B">no</option>
+
+        </select>
+      </li>
+      <li>
+        <p>¿Pregunta 4?</p>
+        <select class="nondisplay" id="option4" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="option 4 A">si</option>
+          <option value="option 4 B">no</option>
+
+        </select>
+      </li>
+      <li>
+        <p>¿Pregunta 5?</p>
+        <select class="nondisplay" id="option5" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="option 5 A">no</option>
+          <option value="option 5 B">si</option>
+
+        </select>
+      </li>
+      <li>
+        <p>¿Pregunta 6?</p>
+        <select class="nondisplay" id="option6" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="option 6 A">no</option>
+          <option value="option 6 B">si</option>
+
+        </select>
+      </li>
+      <li>
+        <p>¿Pregunta 7?</p>
+        <select class="nondisplay" id="option7" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="option 7 A">no</option>
+          <option value="option 7 B">si</option>
+
+        </select>
+      </li>
+      <li>
+        <p>¿Pregunta 8?</p>
+        <select class="nondisplay" id="option8" onchange="handleOptionChange(this)">
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="option 8 A">no</option>
+          <option value="option 8 B">si</option>
+
+        </select>
+      </li>
+    </ol>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

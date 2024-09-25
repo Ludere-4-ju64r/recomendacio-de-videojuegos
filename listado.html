@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>selecetor de videojuegos</title>
+    <META name="author" content="Lucas Gaitan">
+    <META name="descrition" content="pagina selectora de videojuegos">
+    <META name="keywords" content="videojuegos, que jugar, estoy aburrido">
+    <link href="estilos.css" . rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="imagenes/unnamed.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+
+    <header class="titulos">
+        <h1><strong><u>LUDERE, selector de videojuegos</u></strong></h1>
+    </header>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="home.html">
+                    home
+                </a></li>
+            <li><a href="encuesta.html">
+                    encuesta
+                </a></li>
+            <li><a href="listado.html">
+                    listado
+                </a></li>
+            <li><a href="noticias del mundo gamer.html">
+                    noticias del mundo gamer
+                </a></li>
+
+        </ul>
+    </nav>
+    <img src="imagenes/unnamed.png" id="logo" alt="logo">
+
+    <nav>
+
+        <h2>Buscar con filtrado</h2>
+        <input type="text" placeholder="Buscar..." onchange="filtrarnombre(this.value)">
+        <select name="tipodejuego" onchange="filtrarjuego(this.value)">
+            <option value="shooter">shooter</option>
+            <option value="soulslike">soulslike</option>
+            <option value="aventura de acción clásica en 2D">aventura de acción clásica en 2D</option>
+
+
+        </select>
+        <section class="listadodejuegos">
+
+        </section>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
