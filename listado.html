@@ -40,9 +40,10 @@
 
     <nav>
 
-        <h2>Buscar con filtrado</h2>
-        <input type="text" placeholder="Buscar..." onchange="filtrarnombre(this.value)">
+        <h2>Buscar con filtrado o buscar por nombre</h2>
+        <input type="text" placeholder="Buscar por nombre" onchange="filtrarnombre(this.value)">
         <select name="tipodejuego" onchange="filtrarjuego(this.value)">
+            <option value="" disabled selected>buscar con filtrado</option>
             <option value="shooter">shooter</option>
             <option value="soulslike">soulslike</option>
             <option value="aventura de acción clásica en 2D">aventura de acción clásica en 2D</option>
@@ -50,6 +51,7 @@
 
         </select>
         <section class="listadodejuegos">
+
 
         </section>
 

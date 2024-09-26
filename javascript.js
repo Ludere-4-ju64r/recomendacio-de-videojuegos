@@ -26,7 +26,30 @@ const videojuegos = [
         descripcion: "Un no muerto con el único destino de quemarse en la hoguera primigenia o sumir al mundo en oscuridad.",
         dlc: "Artorias of the Abyss",
         imagen: "imagenes/dark souls.jpg"
-    }
+    },
+    {
+        nombre: "dark souls II",
+        tipo: "soulslike",
+        descripcion: "Un no muerto con el único destino de quemarse en la hoguera primigenia o sumir al mundo en oscuridad.",
+        dlc: "",
+        imagen: "imagenes/dark soul II.jpg"
+    },
+    {
+        nombre: "dark souls II Scholar of the first sin",
+        tipo: "soulslike",
+        descripcion: "Un no muerto con el único destino de quemarse en la hoguera primigenia o sumir al mundo en oscuridad.",
+        dlc: "",
+        imagen: "imagenes/dark souls II scholar of the first sin.jpg"
+    },
+    {
+        nombre: "dark souls III",
+        tipo: "soulslike",
+        descripcion: "Un no muerto con el único destino de quemarse en la hoguera primigenia o sumir al mundo en oscuridad.",
+        dlc: "The Ringed City (Lanzamiento: 28 de marzo de 2017) y Ashes of Ariandel (Lanzamiento: 25 de octubre de 2016) ",
+        imagen: "imagenes/dark souls III.jpg"
+    },
+
+
 ];
 
 function visualizarcatalogo(juegos) {
@@ -50,34 +73,35 @@ function filtrarjuego(tipojuego) {
         const juegosfiltrados = juego.tipo == tipojuego;
         return juegosfiltrados
     });
+    visualizarcatalogo(juegos);
+}
+function filtrarnombre(tipojuego) {
+    console.log(tipojuego);
+    tipojuego = tipojuego.toLowerCase();
+    let juegos = videojuegos.filter((juego) => {
+        return juego.nombre.includes(tipojuego);
+    });
     visualizarcatalogo(juegos)
 }
 
 function handleOptionChange(selectElement) {
-    var selectedValue = selectElement.value;
-    var nextSelectId = '';
+    const selectedValue = selectElement.value;
+    let nextSelectId = '';
 
-    // Muestra el mensaje si se elige "No"
-    if (selectElement.id === 'option1') {
-        if (selectedValue === "No") {
-            document.getElementById('mensaje').style.display = 'block';
-        } else {
-            document.getElementById('mensaje').style.display = 'none';
-        }
-        nextSelectId = 'option2'; // El siguiente select después de la primera pregunta
+    //ID: mensaje_No_option1 o mensaje_Sí_option1
+    if (selectedValue == "No") {
+        document.getElementById(`mensaje_No_${selectElement.id}`).style.display = 'block';
+        document.getElementById(`mensaje_Sí_${selectElement.id}`).style.display = 'none';
     } else {
-        // Lógica para mostrar las siguientes preguntas
-        var currentId = parseInt(selectElement.id.replace('option', ''));
-        nextSelectId = 'option' + (currentId + 1);
-        console.log(nextSelectId)
+        document.getElementById(`mensaje_No_${selectElement.id}`).style.display = 'none';
+        document.getElementById(`mensaje_Sí_${selectElement.id}`).style.display = 'block';
     }
+    console.log(selectElement.id)
+    let currentId = parseInt(selectElement.id.replace('option', ''));
+    nextSelectId = 'option' + (currentId + 1);
+    console.log(nextSelectId)
+    document.getElementById(nextSelectId).style.display = "block"
 
-    // Mostrar el siguiente select si no es nulo o indefinido
-    if (nextSelectId) {
-        var nextSelect = document.getElementById(nextSelectId);
-        if (nextSelect) {
-            nextSelect.style.display = 'block';
-        }
-    }
 }
+
 
