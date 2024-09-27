@@ -39,7 +39,7 @@ const videojuegos = [
         tipo: "soulslike",
         descripcion: "Un no muerto con el único destino de quemarse en la hoguera primigenia o sumir al mundo en oscuridad.",
         dlc: "",
-        imagen: "imagenes/dark souls II scholar of the first sin.jpg"
+        imagen: "imagenes/dark souls II Scholar of the first sin.jpg"
     },
     {
         nombre: "dark souls III",
